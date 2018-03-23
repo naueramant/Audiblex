@@ -25,7 +25,7 @@ optional arguments:
   -c, --clear           Clear the activation bits cache
 ```
 
-## Example
+## Examples
 ```shell
 # Convert book to M4A and auto lookup activation bits
 ./audiblex.py SOMEBOOK.aax
