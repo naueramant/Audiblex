@@ -1,10 +1,10 @@
 # Audiblex
-Audible aax audiobook to M4A, M4B and MP4 converter.
+Audible aax audiobook to M4A, M4B and MP3 converter.
 
 It works by extracting the audiobook checksum, looking up it's activation bits in a rainbow table and converting the to the specified format.
 
 ## Platform
-The script is only tested on Linux. It will properly work on OSX and properly not on Windows..
+The script is only tested on Linux x64. It will properly work on OSX and properly not on Windows..
 
 ## Requirements
 * Python 3
@@ -23,6 +23,21 @@ optional arguments:
   -s, --single          Convert to a single file
   -l, --lookup          Lookup the activation bits in the rainbow table
   -c, --clear           Clear the activation bits cache
+```
+
+## Example
+```shell
+# Convert book to M4A and auto lookup activation bits
+./audiblex.py SOMEBOOK.aax
+
+# Just lookup the activation bits without converting
+./audiblex.py SOMEBOOK.aax -l
+
+# Use 'a1b2c3d4' as activation bits and convert
+./audiblex.py SOMEBOOK.aax -a a1b2c3d4
+
+# Convert to single file of type 'MP3'
+./audiblex.py SOMEBOOK.aax -s -t MP3
 ```
 
 ## Thanks to
