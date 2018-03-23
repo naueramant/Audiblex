@@ -28,16 +28,16 @@ optional arguments:
 ## Examples
 ```shell
 # Convert book to M4A and auto lookup activation bits
-./audiblex.py SOMEBOOK.aax
+./audiblex.py BOOK.aax
 
 # Just lookup the activation bits without converting
-./audiblex.py SOMEBOOK.aax -l
+./audiblex.py BOOK.aax -l
 
 # Use 'a1b2c3d4' as activation bits and convert
-./audiblex.py SOMEBOOK.aax -a a1b2c3d4
+./audiblex.py BOOK.aax -a a1b2c3d4
 
 # Convert to single file of type 'MP3'
-./audiblex.py SOMEBOOK.aax -s -t MP3
+./audiblex.py BOOK.aax -s -t MP3
 ```
 
 ## Thanks to
