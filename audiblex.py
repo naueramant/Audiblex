@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse, subprocess, os, re, csv
+from shutil import which
 from enum import Enum
 
 class Colors:
@@ -79,8 +80,12 @@ if __name__ == "__main__":
     parser.add_argument('-c', '--clear', help='Clear the activation bits cache', action='store_true')
 
     args = parser.parse_args()
-    
+
     try:
+        if not which('ffmpeg'):
+            print(Colors.FAIL + '::' + Colors.ENDC, 'ffmpeg not found, not installed?')  
+            exit(1)
+
         if args.clear:
             saveCache({})
 
