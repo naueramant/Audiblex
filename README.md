@@ -1,4 +1,7 @@
 # Audiblex
+
+![Terminal preview](preview.png)
+
 Audible aax audio book to M4A, M4B and MP3 converter.
 
 It works by extracting the audio book checksum, looking up it's activation bits in a rainbow table and converting the to the specified format.
