@@ -79,7 +79,7 @@ if __name__ == "__main__":
     parser.add_argument('-c', '--clear', help='Clear the activation bits cache', action='store_true')
 
     args = parser.parse_args()
-
+    
     try:
         if args.clear:
             saveCache({})

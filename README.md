@@ -10,8 +10,13 @@ The script is only tested on Linux x64.
 * Python 3
 * [ffmpeg](https://ffmpeg.org/) for converting
 
-## Usage
+## Install
 ```shell
+sudo ./install.sh
+```
+
+## Usage
+```
 positional arguments:
   file                  The aax file to convert
 
@@ -28,16 +33,16 @@ optional arguments:
 ## Examples
 ```shell
 # Convert book to M4A and auto lookup activation bits
-./audiblex.py BOOK.aax
+audiblex BOOK.aax
 
 # Just lookup the activation bits without converting
-./audiblex.py BOOK.aax -l
+audiblex BOOK.aax -l
 
 # Use 'a1b2c3d4' as activation bits and convert
-./audiblex.py BOOK.aax -a a1b2c3d4
+audiblex BOOK.aax -a a1b2c3d4
 
 # Convert to single file of type 'MP3'
-./audiblex.py BOOK.aax -s -t MP3
+audiblex BOOK.aax -s -t MP3
 ```
 
 ## Thanks to
