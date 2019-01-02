@@ -42,3 +42,7 @@ optional arguments:
 
 ## Thanks to
 [r15ch13](https://github.com/r15ch13/audible-converter) for the rainbow table and [jostyee](https://github.com/jostyee/AAXtoM4B) for the file converters.
+
+## Future
+- Could be nice to not be depended on the file converter binaries and just use ffmpeg directly. 
+- Could also be nice to not need the rainbow table binaries and convert tables to something python could read.
