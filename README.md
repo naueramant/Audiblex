@@ -1,6 +1,6 @@
 # Audiblex
 
-![Terminal preview](preview.png)
+[![asciicast](https://asciinema.org/a/RTBgTyannTgw6W5S3BEweYIsJ.svg)](https://asciinema.org/a/RTBgTyannTgw6W5S3BEweYIsJ)
 
 Audible aax audio book to M4A, M4B and MP3 converter.
 
