@@ -1,7 +1,5 @@
 # Audiblex
 
-[![asciicast](https://asciinema.org/a/RTBgTyannTgw6W5S3BEweYIsJ.svg)](https://asciinema.org/a/RTBgTyannTgw6W5S3BEweYIsJ)
-
 Audible aax audio book to M4A, M4B and MP3 converter which actually works.
 
 It works by extracting the audio book checksum, looking up it's activation bits in a rainbow table and converting the to the specified format.
