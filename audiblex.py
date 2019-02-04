@@ -71,7 +71,7 @@ def saveCache(ab: dict):
         print(Colors.FAIL + '::' + Colors.ENDC, 'Faild to save activation bits cache')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Convert audible AAX files to M4B, M4A or MP4')
+    parser = argparse.ArgumentParser(description='Convert audible AAX files to M4B, M4A or MP3')
     parser.add_argument('file', help='The aax file to convert')
     parser.add_argument('-t', '--type', help='The destination filetype M4B, M4A or MP3', type=Filetypes)
     parser.add_argument('-a', '--activation', help='Define the activation bits to use')
