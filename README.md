@@ -2,7 +2,7 @@
 
 Audible aax audio book to M4A, M4B and MP3 converter which actually works.
 
-It works by extracting the audio book checksum, looking up it's activation bits in a rainbow table and converting the to the specified format.
+It works by extracting the audio book checksum, looking up it's activation bits in a rainbow table and converting to the specified format.
 
 ## Platform
 The script is only tested on Linux x64.
