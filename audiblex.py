@@ -53,9 +53,9 @@ def convert(type: Filetypes, activation: str, filepath: str, single: bool):
 
     cargs = [os.path.join(sp, 'bin/converters/AAXto' + type.value), activation, filepath];
 
-    if single: cargs.append('--single')
+    if single: cargs.insert(1, "--single")
 
-    subprocess.run(cargs, stdout=subprocess.PIPE)
+    subprocess.run(cargs)
 
 def loadCache():
     try:
