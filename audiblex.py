@@ -55,7 +55,7 @@ def convert(type: Filetypes, activation: str, filepath: str, single: bool):
 
     if single: cargs.insert(1, "--single")
 
-    subprocess.run(cargs)
+    subprocess.run(cargs, stdout=subprocess.PIPE)
 
 def loadCache():
     try:
