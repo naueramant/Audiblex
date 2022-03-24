@@ -52,7 +52,8 @@ def convert(type: Filetypes, activation: str, filepath: str, single: bool):
     print(Colors.BLUE + '::' + Colors.ENDC, 'Starting to convert the audio book')
 
     cargs = [os.path.join(sp, 'bin/converters/AAXto' + type.value), activation, filepath];
-    if single: args.append('--single')
+
+    if single: cargs.insert(1, "--single")
 
     subprocess.run(cargs, stdout=subprocess.PIPE)
 
